@@ -39,6 +39,30 @@ namespace CSBasic
 
             Console.WriteLine(true);
             Console.WriteLine(true);
+
+            int a = 2000000000;
+            int b = 1000000000;
+
+            Console.WriteLine((long)a + b);
+            Console.WriteLine((long)a + (long)b);
+            Console.WriteLine(a + (long)b);
+            Console.WriteLine(a + b);
+
+            Console.WriteLine(long.MaxValue);
+            Console.WriteLine(long.MinValue);
+            Console.WriteLine(sizeof(char));
+            for (int i = '가'; i < '갹'; i++)
+            {
+                Console.Write((char)i);
+            }
+
+            var hello = "안녕"; // var는 지역변수로만 쓸 수 있음.
+            var hello2 = 10000; // 선언과 동시에 값을 넣어줘야함.
+            // 100L -> long, 100.0 -> double, 100.0f -> float 시험
+            Console.WriteLine("+++입력테스트+++");
+            string input = Console.ReadLine();
+            Console.WriteLine("입력: " + input);
+            // 형변환 <- 시험 long은 float으로 자동변환 가능.
         }
     }
 }
